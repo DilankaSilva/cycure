@@ -1,13 +1,30 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const about_content = {
-    title: "Our Agency Experts in Cyber Security & Data Management",
-    des: (<>Nam libero tempore, cum soluta nobis eligendi optio cumque quo minus quod maxime placeat facere possimus assumenda omnis dolor repellendu sautem Temporibus quibusdam et aut officiis nam libero tempore</>),
-    list: ["Understand security and compliance", "Extremely low response time", "Always ready for your growth"],
-    btn: "More About us"
-}
-const { title, des, list, btn } = about_content;
+const aboutContent = {
+    title: "Avesto Global: Your Partner in Cloud Solutions",
+    des: (
+        <>
+            At Avesto Global, we are dedicated to helping businesses harness the power of cloud technology. Our innovative solutions empower organizations to scale, secure, and streamline their operations effectively.
+        </>
+    ),
+    list: [
+        "Expertise in cloud computing and cybersecurity",
+        "Customized solutions for unique business needs",
+        "Commitment to data security and compliance"
+    ],
+    btn: "Let's contact us",
+    // whyChooseUs: [
+    //     "Expertise & Experience: Our team comprises seasoned professionals with extensive technical knowledge and practical experience in cloud computing and cybersecurity.",
+    //     "Tailored Solutions: We recognize that every business has unique needs, which is why we customize our services to align with your specific requirements.",
+    //     "Security & Compliance: We prioritize the security of your data and ensure compliance with industry standards to safeguard your business assets.",
+    //     "Customer-Centric Approach: Your success is our top priority. We collaborate closely with you to deliver the best IT solutions tailored to your goals."
+    // ],
+    connectMessage: "Whether you’re looking to migrate to the cloud, enhance your security posture, or optimize your IT infrastructure, Avesto Global is here to assist you. Contact us today to take the first step toward a smarter, more secure digital future."
+};
+
+const { title, des, list, btn, whyChooseUs, connectMessage } = aboutContent;
+
 const About = ({ style }) => {
     return (
         <section className={`${style ? "inner-about-padding" : "about-area"}`}>
@@ -15,7 +32,7 @@ const About = ({ style }) => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="about-img">
-                        <Image src="/assets/img/others/about.png" width={705} height={567} alt="theme-pure" />
+                            <Image src="/assets/img/others/about.png" width={705} height={567} alt="Avesto Global" />
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-11">
@@ -27,16 +44,35 @@ const About = ({ style }) => {
                                     <li key={index}>{li}</li>
                                 ))}
                             </ul>
-                            <Link href="/about" className="btn">
+                            <p>{connectMessage}</p>
+                            <Link href="/contact" className="btn">
                                 <span className="text">{btn}</span>
                                 <span className="shape"></span>
                             </Link>
                         </div>
                     </div>
                 </div>
+
+                {/* <div className="row mt-5">
+                    <div className="col-lg-12">
+                        <h2 className="title">Why Choose Us?</h2>
+                        <ul className="about-list">
+                            {whyChooseUs.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="row mt-5">
+                    <div className="col-lg-12">
+                        <h3 className="title">Let’s Connect</h3>
+                        <p>{connectMessage}</p>
+                    </div>
+                </div> */}
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default About
+export default About;
