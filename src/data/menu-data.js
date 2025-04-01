@@ -2,13 +2,11 @@ const menu_data = [
     {
         id: 1,
         mega_menu: false,
-        has_dropdown: true,
+        has_dropdown: false,
         title: "Home",
-        link: "#",
+        link: "/home-two",
         sub_menus: [
-            { link: "/", title: "Home-One" },
-            { link: "/home-two", title: "Home-Two" },
-            { link: "/home-three", title: "Home-Three" },
+            
         ],
     },
     {
@@ -69,7 +67,7 @@ const menu_data = [
         id: 7,
         mega_menu: false,
         has_dropdown: false,
-        title: "Contacts",
+        title: "Contact Us",
         link: "/contact",
     },
 ];

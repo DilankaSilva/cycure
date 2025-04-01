@@ -28,9 +28,9 @@ const footer_data = [
     }
 ]
 const footer_content = {
-    number: "+1 488 246 5357",
-    email: "cycure.agency@mail.com",
-    des: (<>3828 Delmas Terrace, Culver City, <br/> CA, United States</>),
+    number: "+94 78 246 5357",
+    email: "agency@mail.com",
+    des: (<>38 Queens Road, Colombo, <br/> Sri Lanka</>),
     icon: ["fab fa-facebook-f", "fab fa-twitter", "fab fa-instagram"]
 }
 const { number, email, des, icon } = footer_content;
@@ -81,7 +81,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright-wrap">
-                    <p className="copyright-text">Copyright ©2023 Design By <span>ThemeDox</span></p>
+                    {/* <p className="copyright-text">Copyright ©2023 Design By <span>ThemeDox</span></p> */}
                 </div>
             </div>
         </footer>

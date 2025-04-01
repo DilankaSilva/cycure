@@ -335,7 +335,7 @@ label {
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1.35;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	padding: 20px 30px;
 	text-align: center;
 	text-transform: uppercase;
@@ -473,6 +473,48 @@ label {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+}
+navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 150px;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar:hover {
+    padding: 12px 30px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-item {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+/* Expanding effect for notifications/messages */
+.navbar.expanded {
+    width: auto;
+    min-width: 200px;
+    padding: 16px 40px;
+    border-radius: 60px;
+    background: rgba(0, 0, 0, 0.95);
 }
 
 .navbar-wrap {
@@ -1466,6 +1508,7 @@ label {
 .inner-about-padding {
 	padding: 50px 0 0;
 }
+
 
 /* 10. Security */
 .about-area.security-area {

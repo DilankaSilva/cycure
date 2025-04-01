@@ -1,31 +1,58 @@
 "use client"
 import Link from "next/link";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const contact_data = [
     {
         id: 1,
         icon: "flaticon-chat",
         title: "Chat With Us",
-        des: (<>We&apos;ve got live Social Experts waiting to help you monday to friday from 9am to 5pm EST.</>),
+        des: (<>We&apos;ve got live Social Experts waiting to help you monday to friday from 11pm to 7am EST.</>),
         btn: "Chat with us",
     },
     {
         id: 2,
         icon: "flaticon-open-mail",
         title: "Send Us Email",
-        des: (<>Simple drop us an email at cycure.agency@mail.com and you&apos;ll receive a reply within 24 hours</>),
+        des: (<>Simple drop us an email at agency@mail.com and you&apos;ll receive a reply within 24 hours</>),
         btn: "Email Us",
     },
     {
         id: 3,
-        icon: "flaticon-open-mail",
+        icon: "flaticon-iphone",
         title: "Make a Call",
-        des: (<>Give us a ring.Our Experts are standing by monday to friday from 9am to 5pm EST.</>),
-        btn: "+1 488 246 5357",
+        des: (<>Give us a ring.Our Experts are standing by monday to friday from 11pm to 7am EST.</>),
+        btn: "+94 78 246 5357",
     },
 ]
 
 const ContactArea = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+        const publicId = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    
+        emailjs
+          .sendForm(serviceId, templateId, form.current, {
+            publicKey: publicId,
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              form.current.reset();
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+        );
+    };
+
     return (
         <section className="contact-area">
             <div className="contact-info-wrapper">
@@ -48,7 +75,7 @@ const ContactArea = () => {
                     </div>
                 </div>
             </div>
-            <div id="map" style={{ backgroundImage: `url(assets/img/bg/map.jpg)` }}></div>
+            <div id="map" style={{ backgroundImage: `url(assets/img/bg/Map.png)` }}></div>
             <div className="contact-form-wrap">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -60,23 +87,23 @@ const ContactArea = () => {
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-xxl-8 col-xl-9 col-lg-10">
-                            <form onSubmit={e => e.preventDefault()} className="contact-form text-center">
+                            <form ref={form} onSubmit={sendEmail} className="contact-form text-center">
                                 <div className="row">
                                     <div className="col-md-6">
                                         <div className="form-grp">
-                                            <input type="text" required placeholder="Your full name" />
+                                            <input type="text" name="name" required placeholder="Your full name" />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-grp">
-                                            <input type="email" required placeholder="Your email address" />
+                                            <input type="email" name="email" required placeholder="Your email address" />
                                         </div>
                                     </div>
                                     <div className="form-grp">
                                         <textarea name="message" id="message" required placeholder="Write your message..."></textarea>
                                     </div>
                                 </div>
-                                <button type="submit" className="btn">Send message</button>
+                                <button type="submit" value ="Send" className="btn">Send message</button>
                             </form>
                         </div>
                     </div>
