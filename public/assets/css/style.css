@@ -301,7 +301,7 @@ label {
 
 /* Bootstrap 5 */
 .container {
-	max-width: 1470px;
+	width: 100%;
 }
 
 .container {
@@ -455,7 +455,7 @@ label {
 
 /* 2. Header */
 .custom-container {
-	max-width: 1830px;
+	width: 100%;
 }
 
 .transparent-header {
@@ -473,48 +473,33 @@ label {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-}
-navbar {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    min-width: 150px;
-    padding: 12px 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+	margin: 0 4rem;
 }
 
 .navbar:hover {
-    padding: 12px 30px;
-    background: rgba(0, 0, 0, 0.9);
+	padding: 12px 30px;
+	background: rgba(0, 0, 0, 0.9);
 }
 
 .nav-item {
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: transform 0.2s;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: transform 0.2s;
 }
 
 .nav-item:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* Expanding effect for notifications/messages */
 .navbar.expanded {
-    width: auto;
-    min-width: 200px;
-    padding: 16px 40px;
-    border-radius: 60px;
-    background: rgba(0, 0, 0, 0.95);
+	width: auto;
+	min-width: 200px;
+	padding: 16px 40px;
+	border-radius: 60px;
+	background: rgba(0, 0, 0, 0.95);
 }
 
 .navbar-wrap {
@@ -704,7 +689,7 @@ navbar {
 	margin-left: 57px;
 }
 
-.offcanvas-btn> .btn-area  {
+.offcanvas-btn>.btn-area {
 	border: none;
 	width: 56px;
 	height: 56px;
@@ -716,18 +701,15 @@ navbar {
 }
 
 .sticky-menu {
+	top: 1rem;
 	position: fixed;
-	left: 0;
-	margin: auto;
-	top: 0;
 	width: 100%;
 	z-index: 99;
-	background: #011529;
 	-webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
 	-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
 	box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-	border-radius: 0;
+	border-radius: 4rem;
 	padding: 0 0;
 }
 
@@ -1576,6 +1558,7 @@ navbar {
 	opacity: 0;
 	z-index: -1;
 }
+
 .services-items-wrapper ul li:hover::after {
 	box-shadow: 0px 24px 48px 8px #011529;
 	transform: scale(1.1);
@@ -3050,11 +3033,11 @@ blockquote::before {
 }
 
 .shop-single-rating .rating i {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 .shop-single-rating .rating i:last-child {
-    margin-right: 0;
+	margin-right: 0;
 }
 
 .shop-single-rating .rating-count {
