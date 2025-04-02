@@ -19,13 +19,17 @@ const Header = ({ style }) => {
                 <div className={`menu-area transparent-header header-style-two " ${sticky ? "sticky-menu" : "" || style ? "header-shop-cart-active" : ""}`} id="sticky-header">
                     <div className="container custom-container">
                         <div className="row">
-                            <div className="col-12">
+                            <div style={{
+                                backgroundColor: "#011529", 
+                                borderRadius: "4rem",
+                               
+                            }}>
                                 <div onClick={() => setIsActive(true)} className="mobile-nav-toggler"><i className="fas fa-bars"></i></div>
                                 <div className="menu-wrap">
                                     <nav className="menu-nav">
                                         <div className="logo">
                                             <Link href="/">
-                                                {/* <Image src="/assets/img/logo/logo.png" width={129} height={39} alt="Logo" /> */}
+                                                <Image src="/assets/img/logo/logo.png" width={129} height={39} alt="Logo" />
                                             </Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
