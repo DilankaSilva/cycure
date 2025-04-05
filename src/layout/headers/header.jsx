@@ -6,6 +6,7 @@ import useSticky from "../../hooks/use-sticky";
 import Sidebar from "@/common/sidebar";
 import Offcanvas from "@/common/offcanvas";
 import Image from "next/image";
+import logo from "../../../public/assets/img/logo/logo.png";
 
 const Header = ({ style }) => {
 
@@ -29,7 +30,7 @@ const Header = ({ style }) => {
                                     <nav className="menu-nav">
                                         <div className="logo">
                                             <Link href="/">
-                                                <Image src="/assets/img/logo/logo.png" width={129} height={39} alt="Logo" />
+                                                <Image src={logo} width={129} height={39} alt="Logo" />
                                             </Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
