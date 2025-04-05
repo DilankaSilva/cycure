@@ -6,7 +6,7 @@ import useSticky from "../../hooks/use-sticky";
 import Sidebar from "@/common/sidebar";
 import Offcanvas from "@/common/offcanvas";
 import Image from "next/image";
-import logo from "../../../public/assets/img/logo/logo.png";
+import logo from "@/assets/logo.png";
 
 const Header = ({ style }) => {
 
