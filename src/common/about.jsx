@@ -2,25 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 const aboutContent = {
-    title: "Avesto Global: Your Partner in Cloud Solutions",
+    title: "Who We Are",
     des: (
         <>
-            At Avesto Global, we are dedicated to helping businesses harness the power of cloud technology. Our innovative solutions empower organizations to scale, secure, and streamline their operations effectively.
+            <p>Avesto Global is a trusted IT solutions provider specializing in Microsoft 365, Azure, cloud engineering, cybersecurity, and information protection. We empower businesses—from startups to enterprises—to secure their data, streamline operations, and innovate with confidence.</p>
+            <p>Our name, inspired by ancient roots, symbolizes truth and innovation, reflecting our commitment to delivering reliable, cutting-edge technology solutions worldwide.</p>
+            <p>With a passion for simplicity and security, we make IT work for you. Whether it's optimizing your Microsoft 365 environment, engineering a robust Azure cloud infrastructure, or protecting your sensitive information with advanced cybersecurity, Avesto is your partner for a safer, smarter digital future.</p>
         </>
     ),
-    list: [
-        "Expertise in cloud computing and cybersecurity",
-        "Customized solutions for unique business needs",
-        "Commitment to data security and compliance"
-    ],
     btn: "Let's contact us",
-    // whyChooseUs: [
-    //     "Expertise & Experience: Our team comprises seasoned professionals with extensive technical knowledge and practical experience in cloud computing and cybersecurity.",
-    //     "Tailored Solutions: We recognize that every business has unique needs, which is why we customize our services to align with your specific requirements.",
-    //     "Security & Compliance: We prioritize the security of your data and ensure compliance with industry standards to safeguard your business assets.",
-    //     "Customer-Centric Approach: Your success is our top priority. We collaborate closely with you to deliver the best IT solutions tailored to your goals."
-    // ],
-    connectMessage: "Whether you’re looking to migrate to the cloud, enhance your security posture, or optimize your IT infrastructure, Avesto Global is here to assist you. Contact us today to take the first step toward a smarter, more secure digital future."
+    connectMessage: "Whether you're looking to migrate to the cloud, enhance your security posture, or optimize your IT infrastructure, Avesto Global is here to assist you. Contact us today to take the first step toward a smarter, more secure digital future."
 };
 
 const { title, des, list, btn, whyChooseUs, connectMessage } = aboutContent;
@@ -37,13 +28,8 @@ const About = ({ style }) => {
                     </div>
                     <div className="col-lg-6 col-md-11">
                         <div className="about-content">
-                            <h2 className="title">{title}</h2>
+                            <h2 className="title mb-4">{title}</h2>
                             <p>{des}</p>
-                            <ul className="about-list">
-                                {list.map((li, index) => (
-                                    <li key={index}>{li}</li>
-                                ))}
-                            </ul>
                             <p>{connectMessage}</p>
                             <Link href="/contact" className="btn">
                                 <span className="text">{btn}</span>
