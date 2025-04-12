@@ -3,7 +3,7 @@ import tabs_data from '@/data/tab-data';
 import Image from 'next/image';
 import { useState } from 'react';
 
-const tab_title=["Banking", "Manufacturing", "Oil And Gas", "Insurance", "Healthcare"]
+const tab_title=["Technology Startups","Financial Services",  "Sustainable Businesses",  "Healthcare", "E-Commerce", "Professional Services", "Manufacturing",]
 
 const HelpArea = ({ style_3 }) => {
     // Define state to keep track of the active tab

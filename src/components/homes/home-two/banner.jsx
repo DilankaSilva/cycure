@@ -79,8 +79,8 @@ const Banner = () => {
                 <div className="row justify-content-center">
                     <div className="col-xl-8 col-lg-10">
                         <div className="banner-three-content text-center">
-                            <h2 className="heading wow fadeInUp" data-wow-delay=".2s">We Help to Protect Modern <span>Information</span> From Hackers</h2>
-                            <p className="wow fadeInUp" data-wow-delay=".4s">Nam libero tempore, cum soluta nobis eligendi optio cumque quo minus quod maxime placeat facere possimus assumenda omnis repellendu</p>
+                            <h2 className="heading wow fadeInUp" data-wow-delay=".2s">Empower Growth <span>with</span> Secure Cloud Solutions</h2>
+                            <p className="wow fadeInUp" data-wow-delay=".4s">Avesto Global delivers Cloud Engineering, M365, Modern Workplace, Information Protection solutions within your reach. </p>
                             <Link href="/contact" className="btn wow fadeInUp" data-wow-delay=".6s">
                                 <span className="text">Chat With Us</span>
                                 <span className="shape"></span>

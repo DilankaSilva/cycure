@@ -15,12 +15,12 @@ const AboutMain = () => {
       <main className="main-area fix">
         <Breadcrumb title="About Us" sm_title="About Us" />
         <About style={true} />
-        {/* <Counter style={true} />
+        <Counter style={true} />
         <Team />
         <StepsArea style={true} />
         <Marquee />
         <Testimonial />
-        <Blog style={true} /> */}
+        <Blog style={true} />
       </main>
     </>
   )
