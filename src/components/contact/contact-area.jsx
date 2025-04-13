@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Alert } from "bootstrap";
 
 
 const contact_data = [
@@ -16,7 +17,7 @@ const contact_data = [
         id: 2,
         icon: "flaticon-open-mail",
         title: "Send Us Email",
-        des: (<>Simple drop us an email at agency@mail.com and you&apos;ll receive a reply within 24 hours</>),
+        des: (<>Simple drop us an email at info@avesto.global and you&apos;ll receive a reply within 24 hours</>),
         btn: "Email Us",
     },
     {
@@ -24,7 +25,7 @@ const contact_data = [
         icon: "flaticon-iphone",
         title: "Make a Call",
         des: (<>Give us a ring.Our Experts are standing by monday to friday from 11pm to 7am EST.</>),
-        btn: "+94 78 246 5357",
+        btn: "+94 76 732 7788",
     },
 ]
 
@@ -44,11 +45,11 @@ const ContactArea = () => {
           })
           .then(
             () => {
-              console.log('SUCCESS!');
+              alert("Message Successfully sent");
               form.current.reset();
             },
             (error) => {
-              console.log('FAILED...', error.text);
+                alert("Message Sending Failed...");
             },
         );
     };

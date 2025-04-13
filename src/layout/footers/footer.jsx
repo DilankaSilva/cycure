@@ -28,8 +28,8 @@ const footer_data = [
     }
 ]
 const footer_content = {
-    number: "+94 78 246 5357",
-    email: "agency@mail.com",
+    number: "+94 76 732 7788",
+    email: "info@avesto.global",
     des: (<>38 Queens Road, Colombo, <br/> Sri Lanka</>),
     icon: ["fab fa-facebook-f", "fab fa-twitter", "fab fa-instagram"]
 }
