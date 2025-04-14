@@ -1,6 +1,6 @@
 import Banner from './banner'
 import Brand from '@/common/brand'
-import About from '@/components/homes/home/about'
+import WhyChooseUs from '@/components/homes/home/whyChooseUs'
 import Marquee from '@/common/marquee'
 import Testimonial from '@/common/testimonial'
 import Blog from '@/common/blog'
@@ -18,7 +18,7 @@ const HomeTwo = () => {
         <Banner />
         <Brand style_3={true} />
         <Services style={true} />
-        <About />
+        <WhyChooseUs />
         <Team />
         <HelpArea style_3={true} />
         <Marquee />

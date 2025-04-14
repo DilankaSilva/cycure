@@ -23,8 +23,13 @@ const menu_data = [
         title: "Services",
         link: "#",
         sub_menus: [
-            { link: "/services", title: "Our-Oervice" },
-            { link: "/services-details", title: "Service-Details" },
+            { link: "/services", title: "Our Services" },
+            { link: "/services/microsoft-365-solutions", title: "Microsoft 365 Solutions" },
+            { link: "/services/azure-cloud-engineering", title: "Azure Cloud Engineering" },
+            { link: "/services/cybersecurity-solutions", title: "Cybersecurity Solutions" },
+            { link: "/services/information-protection-solutions", title: "Information Protection Solutions" },
+            { link: "/services/managed-it-security-services", title: "Managed IT & Security Services" },
+            { link: "/services/mobile-device-management", title: "Mobile Device Management" }
         ],
     },
     {
