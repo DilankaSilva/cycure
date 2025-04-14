@@ -3,7 +3,7 @@ import Brand from "@/common/brand"
 import Service from "./services"
 import StepsArea from "@/common/steps-area"
 import VideoArea from "./video-area"
-import About from "@/components/homes/home/about"
+import WhyChooseUs from "@/components/homes/home/whyChooseUs"
 import Team from "@/common/team"
 import Marquee from "@/common/marquee"
 import Blog from "@/common/blog"
@@ -17,7 +17,7 @@ const Home = () => {
       <main className="main-area fix">
         <Banner />
         <Service />
-        <About />
+        <WhyChooseUs />
         <Marquee style={true} />
         <StepsArea />
         <Team />

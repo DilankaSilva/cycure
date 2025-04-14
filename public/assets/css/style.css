@@ -1461,10 +1461,11 @@ label {
 	color: #555;
 }
 
-.about-list {
-	margin: 0 0 55px;
-	padding: 0;
-}
+
+/*.about-list {*/
+/*	margin: 0 0 55px;*/
+/*	padding: 0;*/
+/*}*/
 
 /*.about-list li {*/
 /*	list-style: none;*/
@@ -3732,4 +3733,116 @@ blockquote::before {
 		-webkit-transform: scale(0);
 	}
 
+}
+
+
+/* 23.WhyChooseUs.css */
+.why-choose-us {
+	padding: 80px 0;
+}
+
+/*.why-choose-us__image {*/
+/*	position: relative;*/
+/*	overflow: hidden;*/
+/*	border-radius: 8px;*/
+/*	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+.why-choose-us__title {
+	font-size: 56px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+.why-choose-us__description {
+	font-size: 1.125rem;
+	color: #4a5568;
+	margin-bottom: 2rem;
+	line-height: 1.6;
+}
+
+.why-choose-us__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.why-choose-us__item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1.5rem;
+	padding: 1rem;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+.why-choose-us__item:hover {
+	background-color: #f8f9fa;
+}
+
+.why-choose-us__icon {
+	color: #4299e1;
+	font-size: 1.25rem;
+	margin-right: 1rem;
+	margin-top: 0.25rem;
+}
+
+.why-choose-us__item-content {
+	flex: 1;
+}
+
+.why-choose-us__item-title {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #2d3748;
+	margin-bottom: 0.5rem;
+}
+
+.why-choose-us__item-description {
+	font-size: 1rem;
+	color: #4a5568;
+	line-height: 1.5;
+	margin: 0;
+}
+
+/* Animation for wow.js */
+.wow.fadeInLeft {
+	animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+	.why-choose-us {
+		padding: 60px 0;
+	}
+
+	/*.why-choose-us__title {*/
+	/*	font-size: 1.75rem;*/
+	/*}*/
+}
+
+@media (max-width: 767.98px) {
+	.why-choose-us {
+		padding: 40px 0;
+	}
+
+	/*.why-choose-us__title {*/
+	/*	font-size: 1.5rem;*/
+	/*}*/
+
+	.why-choose-us__description {
+		font-size: 1rem;
+	}
 }
