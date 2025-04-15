@@ -30,7 +30,7 @@ const Header = ({ style }) => {
                                     <nav className="menu-nav">
                                         <div className="logo">
                                             <Link href="/">
-                                                <Image src={logo} width={129} height={39} alt="Logo" />
+                                                <Image src={logo} width={155} height={50} alt="Logo" />
                                             </Link>
                                         </div>
                                         <div className="navbar-wrap main-menu d-none d-lg-flex">
@@ -50,11 +50,11 @@ const Header = ({ style }) => {
                                                     <span className="mini-cart-count">Cart (0)</span>
                                                 </Link>
                                             </div>}
-                                        <div className="offcanvas-btn">
+                                        {/* <div className="offcanvas-btn">
                                             <button onClick={() => setOffcanvasOpen(true)} className="btn-area">
                                                 <Image src="/assets/img/icons/dots.png" width={22} height={14} alt="Icon" />
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </nav>
                                 </div>
                                 <div className="menu-backdrop"></div>

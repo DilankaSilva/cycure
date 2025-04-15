@@ -16,7 +16,7 @@ const AboutMain = () => {
         <Breadcrumb title="About Us" sm_title="About Us" />
         <About style={true} />
         <Counter style={true} />
-        <Team />
+        {/* <Team /> */}
         <StepsArea style={true} />
         <Marquee />
         <Testimonial />

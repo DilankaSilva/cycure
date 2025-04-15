@@ -32,29 +32,29 @@ const menu_data = [
             { link: "/services/mobile-device-management", title: "Mobile Device Management" }
         ],
     },
-    {
-        id: 4,
-        mega_menu: false,
-        has_dropdown: true,
-        title: "Pages",
-        link: "#",
-        sub_menus: [
-            { link: "/pricing", title: "Pricing" },
-            { link: "/team", title: "Our Team" },
-            { link: "/faq", title: "Faq" },
-            { link: "/not-found", title: "4o4 Page" },
-        ],
-    },
+    // {
+    //     id: 4,
+    //     mega_menu: false,
+    //     has_dropdown: true,
+    //     title: "Pages",
+    //     link: "#",
+    //     sub_menus: [
+    //         { link: "/pricing", title: "Pricing" },
+    //         { link: "/team", title: "Our Team" },
+    //         { link: "/faq", title: "Faq" },
+    //         { link: "/not-found", title: "4o4 Page" },
+    //     ],
+    // },
     {
         id: 5,
         mega_menu: false,
         has_dropdown: true,
-        title: "Shop",
-        link: "#",
-        sub_menus: [
-            { link: "/shop", title: "Our-Shop" },
-            { link: "/shop-details", title: "Shop Details" },
-        ],
+        title: "Case studies",
+        link: "/case-studies",
+        // sub_menus: [
+        //     { link: "/shop", title: "Our-Shop" },
+        //     { link: "/shop-details", title: "Shop Details" },
+        // ],
     },
     {
         id: 6,

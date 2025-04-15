@@ -15,4 +15,4 @@ const VideoPopup = ({ isVideoOpen, setIsVideoOpen, videoId = "d8w5SICzzxc", }) =
     )
 }
 
-export default VideoPopup
+export default 

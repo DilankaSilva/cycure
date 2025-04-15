@@ -19,7 +19,7 @@ const HomeTwo = () => {
         <Brand style_3={true} />
         <Services style={true} />
         <WhyChooseUs />
-        <Team />
+        {/* <Team /> */}
         <HelpArea style_3={true} />
         <Marquee />
         <Testimonial />
