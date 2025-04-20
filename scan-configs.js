@@ -34,7 +34,7 @@ const allowedExtensions = [
   ".js",
   ".ts",
   ".json",
-  ".env",
+  ".env.local",
   ".yml",
   ".yaml",
   ".py",
@@ -65,7 +65,7 @@ function removeComments(line, extension) {
   if ([".js", ".ts", ".java"].includes(extension)) {
     line = line.replace(/\/\/.*$/, ""); // Remove `// comments`
   }
-  if ([".env", ".yml", ".yaml", ".py"].includes(extension)) {
+  if ([".env.local", ".yml", ".yaml", ".py"].includes(extension)) {
     line = line.replace(/#.*/, ""); // Remove `# comments`
   }
 

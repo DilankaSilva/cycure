@@ -1,4 +1,3 @@
-// app/services/[slug]/page.jsx
 import { services } from '@/data/services';
 import ServicesDetails from '@/components/services-details';
 import { notFound } from 'next/navigation';
