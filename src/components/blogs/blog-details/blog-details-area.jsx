@@ -4,8 +4,8 @@ import { getLatestPost } from "@/services/blogService";
 import Header from "@/layout/headers/header";
 import Breadcrumb from "@/common/breadcrumb";
 import BlogSidebar from "@/components/blogs/blog-standard/blog-sidebar";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const BlogDetailsArea = () => {
