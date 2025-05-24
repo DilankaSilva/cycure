@@ -20,7 +20,7 @@ const menu_data = [
         id: 3,
         mega_menu: false,
         has_dropdown: true,
-        title: "Services",
+        title: "Solution",
         link: "#",
         sub_menus: [
             { link: "/services", title: "Our Services" },
@@ -45,29 +45,36 @@ const menu_data = [
     //         { link: "/not-found", title: "4o4 Page" },
     //     ],
     // },
+        {
+        id: 4,
+        mega_menu: false,
+        has_dropdown: true,
+        title: "Pricing",
+        link:  "/pricing",
+    },
     {
         id: 5,
         mega_menu: false,
         has_dropdown: true,
-        title: "Case studies",
+        title: "Resources",
         link: "/case-studies",
         // sub_menus: [
         //     { link: "/shop", title: "Our-Shop" },
         //     { link: "/shop-details", title: "Shop Details" },
         // ],
     },
-    {
-        id: 6,
-        mega_menu: false,
-        has_dropdown: true,
-        title: "Blog",
-        link: "#",
-        sub_menus: [
-            { link: "/blog-grid", title: "Blog-Grid" },
-            { link: "/blog", title: "Blog-Standard" },
-            { link: "/blog-details", title: "Blog-Details" },
-        ],
-    },
+    // {
+    //     id: 6,
+    //     mega_menu: false,
+    //     has_dropdown: true,
+    //     title: "Blog",
+    //     link: "#",
+    //     sub_menus: [
+    //         { link: "/blog-grid", title: "Blog-Grid" },
+    //         { link: "/blog", title: "Blog-Standard" },
+    //         { link: "/blog-details", title: "Blog-Details" },
+    //     ],
+    // },
     {
         id: 7,
         mega_menu: false,

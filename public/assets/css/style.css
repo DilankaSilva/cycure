@@ -33,6 +33,7 @@
 24. 404
 25. Footer
 26. Preloader
+27.casestudy
 
 */
 /* Add this CSS to your stylesheets */
@@ -1460,6 +1461,21 @@ label {
 	line-height: 1.8;
 	color: #555;
 }
+.mission-content {
+	margin: 200px 0 0 0;
+}
+
+.mission-content .title{
+	font-size: 56px;
+	line-height: 1.17;
+	/* margin: 0 0 40px; */
+}
+.mission-content p{
+	margin: 0 0 55px;
+	font-size: 17px;
+	line-height: 1.8;
+	color: #555;
+}
 
 
 /*.about-list {*/
@@ -2333,7 +2349,7 @@ label {
 
 /* 20. Blog */
 .blog-area {
-	padding: 130px 0 140px;
+	padding: 0 0 80px;
 }
 
 .blog-post-item {
@@ -3846,3 +3862,25 @@ blockquote::before {
 		font-size: 1rem;
 	}
 }
+
+/* 27.Case Study */
+ .study-details {
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+}
+
+.study-details[aria-expanded="true"] {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.case-study-item {
+  transition: all 0.3s ease;
+  padding: 20px;
+  border: 1px solid #eee;
+}  
+ 
+.case-study-item:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+} 

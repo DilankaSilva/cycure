@@ -1,8 +1,8 @@
-"use client"; // required for Framer Motion in App Router
-
+"use client"; 
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { services } from '@/data/services';
+import Link from "next/link";
 
 const slideInLeft = {
   hidden: { opacity: 0, x: -100 },
@@ -86,7 +86,6 @@ const ServicesDetailsArea = ({ slug }) => {
             </div>
           </motion.div>
 
-          {/* Sidebar from Right */}
           <motion.div
             className="col-lg-4"
             variants={slideInRight}
