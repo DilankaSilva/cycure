@@ -1,10 +1,12 @@
+"use client"
+import { useState } from 'react';
 import Header from "@/layout/headers/header";
-import Image from "next/image";
-import Link from "next/link";
 import Breadcrumb from "@/common/breadcrumb";
+import Blog from "@/common/blog"
+import Link from "next/link";
 
 const caseStudies = [
-  {
+   {
     title: "Azure Virtual Desktop Deployment for a Global Design Firm",
     client: "Denmark Based Industrial Engineering Firm",
     industry: "Industrial Engineering",
@@ -48,45 +50,130 @@ const caseStudies = [
   }
 ];
 
+
+const resources = {
+  caseStudies: caseStudies.map(study => ({
+    title: study.title,
+    description: `${study.client} - ${study.results[0].toLowerCase()}`,
+    link: `/case-studies/${study.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')}`
+  }))
+};
+
 const CaseStudies = () => {
-  return (
+  const [expandedStudies, setExpandedStudies] = useState([]);
+
+  const toggleStudy = (index) => {
+    setExpandedStudies(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index) 
+        : [...prev, index]
+    );
+  };
+    return (
     <>
-    <Header />
-    <main className="main-area fix">
-    <Breadcrumb title="Case Studies" sm_title="Case Studies" />
-    <section className="services-details-area">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg">
-            <div className="services-details-wrap">
-              {caseStudies.map((study, index) => (
-                <div key={index} className="services-details-content mb-5">
-                  <h2 className="title">{study.title}</h2>
-                  <p><strong>Client:</strong> {study.client}</p>
-                  <p><strong>Industry:</strong> {study.industry}</p>
-                  <p><strong>Service Highlighted:</strong> {study.service}</p>
+      <Header />
+      <main className="main-area fix">
+        <Breadcrumb title="Resources" sm_title="Resources" />
+        
+        {/* Blog Section */}
+        <section className="blog-area">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-xl-6 col-lg-7 col-md-10">
+                <div className="section-title text-center mb-60">
+                  <h2 className="title">Insights for Your Digital Transformation</h2>
+                </div>
+              </div>
+            </div>
+            <Blog />
+          </div>
+        </section>
 
-                  <h4 className="services-content-title mt-4">Challenge</h4>
-                  <p>{study.challenge}</p>
-
-                  <h4 className="services-content-title">Solution</h4>
-                  <p>{study.solution}</p>
-
-                  <h4 className="services-content-title">Results</h4>
-                  <ul className="about-list">
-                    {study.results.map((result, i) => (
-                      <li key={i}>{result}</li>
-                    ))}
-                  </ul>
+        {/* Guides/Downloads Section */}
+   {/*     <section className="services-area gray-bg pt-115 pb-90">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-xl-6 col-lg-7 col-md-10">
+                <div className="section-title text-center mb-60">
+                  <h2 className="title">Free Resources & Guides</h2>
+                  <p>Download our expert guides (requires email signup)</p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              {resources.guides.map((guide, index) => (
+                <div key={index} className="col-lg-6 col-md-6">
+                  <div className="services-item mb-30">
+                    <div className="services-content">
+                      <h3 className="title">{guide.title}</h3>
+                      <p>{guide.description}</p>
+                      <Link 
+                        href={`/download?resource=${guide.download}`}
+                        className="btn btn-secondary"
+                      >
+                        Download Guide
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-          
-        </div>
-      </div>
-    </section>
-    </main>
+        </section>   */}
+
+        {/* Case Studies Section */}
+ <section className="case-studies-area pt-20 pb-40">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-xl-6 col-lg-7 col-md-10">
+                <div className="section-title text-center mb-60">
+                  <h2 className="title">Success Stories</h2>
+                  <p>See how we've helped businesses like yours</p>
+                </div>
+              </div>
+            </div>
+            {/* className="pricing-item wow fadeInUp" data-wow-delay=".2s"
+            case-study-item mb-30 */}
+            <div className="row">
+              {caseStudies.map((study, index) => (
+                <div key={index} className="col-lg-6 col-md-6">
+                  <div className="pricing-item wow fadeInUp" data-wow-delay=".2s">
+                    <div className="case-study-content">
+                      <h3 className="title">{study.title}</h3>
+                      <p><strong>Client:</strong> {study.client}</p>
+                      
+                      {expandedStudies.includes(index) && (
+                        <div className="study-details mt-3">
+                          <h4 className="services-content-title">Challenge</h4>
+                          <p>{study.challenge}</p>
+
+                          <h4 className="services-content-title">Solution</h4>
+                          <p>{study.solution}</p>
+
+                          <h4 className="services-content-title">Results</h4>
+                          <ul className="about-list">
+                            {study.results.map((result, i) => (
+                              <li key={i}>{result}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      <button 
+                        className="btn btn-primary mt-3"
+                        onClick={() => toggleStudy(index)}
+                        aria-expanded={expandedStudies.includes(index)}
+                      >
+                        {expandedStudies.includes(index) ? 'Show Less' : 'Read Case Study'}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
     </>
   );
 };
