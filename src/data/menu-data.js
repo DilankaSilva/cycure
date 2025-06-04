@@ -27,9 +27,11 @@ const menu_data = [
             { link: "/services/microsoft-365-solutions", title: "Microsoft 365 Solutions" },
             { link: "/services/azure-cloud-engineering", title: "Azure Cloud Engineering" },
             { link: "/services/cybersecurity-solutions", title: "Cybersecurity Solutions" },
-            { link: "/services/information-protection-solutions", title: "Information Protection Solutions" },
-            { link: "/services/managed-it-security-services", title: "Managed IT & Security Services" },
-            { link: "/services/mobile-device-management", title: "Mobile Device Management" }
+            { link: "/services/csp-additional-solutions", title: "CSP and Additional Solutions" },
+            { link: "/services/bcdr-services", title: "Business Continuity and Disaster Recovery (BCDR)" },
+            // { link: "/services/information-protection-solutions", title: "Information Protection Solutions" },
+            // { link: "/services/managed-it-security-services", title: "Managed IT & Security Services" },
+            // { link: "/services/mobile-device-management", title: "Mobile Device Management" }
         ],
     },
     // {

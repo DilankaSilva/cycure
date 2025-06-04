@@ -19,11 +19,11 @@ const footer_data = [
         title: "Our Services",
         class: "column-3",
         links: [
-            { list: "Spyware Protection", link: "/services-details" },
-            { list: "Fast Cloud Backup", link: "/services-details" },
-            { list: "Database Security", link: "/services-details" },
-            { list: "Transaction Security", link: "/services-details" },
-            { list: "Spambot Shield", link: "/services-details" },
+            { list: "Microsoft 365 Solutions", link: "/services/microsoft-365-solutions" },
+            { list: "Azure cloud Solution", link: "/services/azure-cloud-engineering" },
+            { list: "Cybersecurity Solutions", link: "/services/cybersecurity-solutions" },
+            { list: "CSP and Additional Solutions", link: "/services/csp-additional-solutions" },
+            { list: " BCDR ", link: "/services/bcdr-services" },
         ]
     }
 ]
@@ -31,7 +31,8 @@ const footer_content = {
     number: "+94 78 246 5357",
     email: "agency@mail.com",
     des: (<>38 Queens Road, Colombo, <br/> Sri Lanka</>),
-    icon: ["fab fa-facebook-f", "fab fa-twitter", "fab fa-instagram"]
+    icon: ["fab fa-linkedin","fa-x-twitter"]
+    // "fab fa-twitter"
 }
 const { number, email, des, icon } = footer_content;
 const Footer = () => {
@@ -81,7 +82,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyright-wrap">
-                    {/* <p className="copyright-text">Copyright ©2023 Design By <span>ThemeDox</span></p> */}
+                    <p className="copyright-text">© 2025 Avesto Global (Private) Limited.</p>
                 </div>
             </div>
         </footer>
