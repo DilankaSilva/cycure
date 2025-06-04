@@ -143,5 +143,53 @@ export const services = {
             "Geofencing",
             "Automated Alerts"
         ]
+    },
+    "bcdr-solutions": {
+        details_img: "/assets/img/others/services_details.jpg",
+        title: "Business Continuity & Disaster Recovery",
+        summary: "Ensure resilience with robust backup and recovery strategies.",
+        des: "Our BCDR services help businesses maintain operations during disruptions with comprehensive continuity planning and reliable disaster recovery mechanisms. We ensure your critical systems and data are protected and quickly recoverable in any scenario.",
+        des_2: "From risk assessment to full-scale recovery implementation, we offer end-to-end support to safeguard your business from downtime. Our experts work with you to tailor backup schedules, failover systems, and continuity policies that align with your operations.",
+        content_title: "Why Choose Our BCDR Services?",
+        about_list: [
+            "Custom business continuity planning",
+            "Disaster recovery strategy development",
+            "Automated and secure data backups",
+            "Recovery Time Objective (RTO) and Recovery Point Objective (RPO) planning",
+            "Cloud-based and on-premises failover solutions",
+            "Compliance and risk mitigation support"
+        ],
+        sidebar_lists: [
+            "Risk Assessment",
+            "Backup Configuration",
+            "Disaster Simulation Testing",
+            "Cloud Recovery Integration",
+            "Security & Compliance Audits",
+            "24/7 Emergency Support"
+        ]
+    },
+    "csp-training-solutions": {
+        details_img: "/assets/img/others/services_details.jpg",
+        title: "CSP Licensing & Training Solutions",
+        summary: "Simplify licensing and empower teams with tailored training.",
+        des: "We streamline your Microsoft Cloud Solution Provider (CSP) licensing with clear management and cost optimization. Our solutions ensure you always have the right licenses for your users—nothing more, nothing less.",
+        des_2: "To support successful adoption, we also provide training programs tailored to your team's needs, enabling them to fully leverage the tools at their disposal and enhance productivity across the board.",
+        content_title: "Why Choose Our CSP & Training Services?",
+        about_list: [
+            "Efficient CSP license management",
+            "Usage and cost optimization",
+            "License compliance audits",
+            "Role-based user training programs",
+            "Adoption strategies for Microsoft 365 and Azure",
+            "Support for onboarding and ongoing education"
+        ],
+        sidebar_lists: [
+            "CSP License Management",
+            "Microsoft 365 Training",
+            "End-User Adoption Plans",
+            "Cost Analysis & Forecasting",
+            "License Audit Preparation",
+            "Admin & Power User Enablement"
+        ]
     }
 };

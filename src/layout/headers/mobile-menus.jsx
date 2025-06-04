@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-// internal
 import menu_data from "../../data/menu-data";
 
 const MobileMenus=()=> {
